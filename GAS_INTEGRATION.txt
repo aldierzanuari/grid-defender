@@ -1,0 +1,7 @@
+OPTIONAL: Add GRID DEFENDER card to existing Energy Play Arena (Games.html).
+
+1) In Games.html, change the heading text from 'Dua tantangan.' to 'Tiga tantangan.'
+2) Before the closing </div></section> of the .expo-grid section, insert:
+<a class="expo-card" href="https://aldierzanuari.github.io/grid-defender/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block"><small>03 / ARCADE · GRID DEFENSE</small><h3>Grid Defender</h3><p>Blackout Siege. Pertahankan gardu dari serangan robot dan drone!</p><span class="expo-cta">MULAI MISI ↗</span><span class="expo-symbol" aria-hidden="true">⚡</span></a>
+
+NOTE: This opens a new tab and does NOT use the existing ExpoGames score API or local leaderboard. For a seamless fullscreen iframe, update Games.html launch logic to support external URLs and origin-safe postMessage; do not pass the GitHub URL into getGamePage(), which accepts only registered game keys.
